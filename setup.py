@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="monsql-MASTERFOX",
+    name="monsql-python",
     version="0.0.1",
     author="Masterfox, 0xNinja, Apollo",
     author_email="tom.mounet@pm.me",
