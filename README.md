@@ -1,2 +1,9 @@
 # MonSQL-python
-Librarie python pour MonSQL
+
+French overlay for MySQL
+
+## How to use
+
+Simply `from monsql import MonSQL`
+
+## 
