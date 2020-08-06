@@ -6,4 +6,8 @@ French overlay for MySQL
 
 Simply `from monsql import MonSQL`
 
-## 
+## TODO
+
+* [ ] Add VoltaireError
+* [ ] Add some comments
+
