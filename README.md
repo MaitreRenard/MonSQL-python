@@ -11,3 +11,6 @@ Simply `from monsql import MonSQL`
 * [ ] Add VoltaireError
 * [ ] Add some comments
 
+## See
+
+dev.monsql.com
