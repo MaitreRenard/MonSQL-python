@@ -38,6 +38,7 @@ class MonSQL:
             "base_de_donnees":"basededonnees"
         }
         self.connexion = None
+        self.curseur = None
 
 
     """
@@ -72,6 +73,7 @@ class MonSQL:
             self.donne_lerreur(erreur)
         
         self.connexion = une_connexion
+        self.curseur = une_connexion.cursor()
         return self.connexion
 
 
@@ -103,14 +105,6 @@ class MonSQL:
 
 
     """
-    TODO: traduire les requêtes MonSQL vers MySQL pour les exécuter
-    Réalise la requête à la base de données
-    """
-    def requete_la_base(self, requete):
-        pass
-
-
-    """
     Fait la traduction des erreurs MySQL vers des erreurs en bon français
     """
     def donne_lerreur(self, erreur):
@@ -129,11 +123,19 @@ class MonSQL:
 
     
     """
+    TODO: faire la traduction MonSQL vers MySQL
+    """
+    def traduction(self, requete):
+        return requete
+
+
+    """
     Réalise la requpete donnée avec le curseur donné
     """
-    def requete_moi_ca(curseur, requete):
+    def requete_la_base(self, requete):
         try:
-            return curseur.execute(requete)
+            requete = self.traduction(requete)
+            return self.curseur.execute(requete)
         except Exception as erreur:
             self.donne_lerreur(erreur)
 
