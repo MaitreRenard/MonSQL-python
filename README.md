@@ -1,15 +1,17 @@
 # MonSQL-python
 
-French overlay for MySQL
+French overlay for MySQL :fr:
 
 ## How to use
 
-Simply `from monsql import MonSQL`
+Simply `from MonSQL import *`
 
 ## TODO
 
 * [ ] Add VoltaireError
-* [ ] Add some comments
+* [X] Add some comments
+* [ ] Add documentation (some use cases in the MonSQL class)
+* [X] Make translation from MonSQL to MySQL queries
 
 ## See
 
