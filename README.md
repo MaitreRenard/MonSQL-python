@@ -13,11 +13,7 @@ See [test.py](test.py) for more details.
 ## TODO
 
 * [X] Add test file with use cases
-* [ ] Add VoltaireError
-* [X] Add some comments
+* [ ] Add ErreurVoltaire
+* [X] Add comments in code
 * [ ] Add documentation
 * [X] Make translation from MonSQL to MySQL queries
-
-## See
-
-dev.monsql.com
