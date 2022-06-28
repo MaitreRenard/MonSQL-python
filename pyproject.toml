@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monsql-python"
+version = "1.0.0"
+description = "The French MySQL wrapper in Python"
+readme = "README.md"
+authors = [{ name="0xNinja", email="57400445+OxNinja@users.noreply.github.com" }, { name="MasterFox", email="tom.mounet@pm.me" }, { name="Apollo", email="noreply@github.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+keywords = ["mysql", "monsql", "database"]
+dependencies = [
+  "mysql-connector-python",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/maitrerenard/MonSQL-python"
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
