@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "monsql-python"
-version = "1.0.0"
+version = "1.0.1"
 description = "The French MySQL wrapper in Python"
 readme = "README.md"
 authors = [{ name="0xNinja", email="57400445+OxNinja@users.noreply.github.com" }, { name="MasterFox", email="tom.mounet@pm.me" }, { name="Apollo", email="noreply@github.com" }]
@@ -24,7 +24,7 @@ requires-python = ">=3.6"
 Homepage = "https://github.com/maitrerenard/MonSQL-python"
 
 [tool.bumpver]
-current_version = "1.0.0"
+current_version = "1.0.1"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 commit = true
@@ -34,6 +34,7 @@ push = false
 [tool.bumpver.file_patterns]
 "pyproject.toml" = [
     'current_version = "{version}"',
+    'version = "{version}"',
 ]
 "setup.py" = [
     "{version}",
